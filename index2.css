@@ -1,0 +1,126 @@
+
+/* *************************    MEDIA QUERRIES     ********************** */
+
+@media (max-width: 991px) {
+    header,
+    header.sticky{
+        padding: 1rem 2rem;
+
+    }
+    header .navigation{
+        display: none;
+    }
+    header .navigation.active{
+        width: 100%;
+        height: calc(100% - 68px);
+        position: fixed;
+        top: 68px;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: #fff;
+    }
+    header .navigation li{
+        margin-left: 0;
+    }
+    header .navigation li a{
+        text-decoration: none;
+        color: #111;
+        font-size: 1.8em;
+        font-weight: 500
+
+    }
+    .menuToggle{
+        position: relative;
+        width: 4rem;
+        height: 4rem;
+        background: url("IMAGES/menu.png");
+        background-size: 3rem;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+
+    }
+    .menuToggle.active{
+        background: url("IMAGES/close.png");
+        background-size: 2.4rem;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    header.sticky .menuToggle{
+        filter: invert(1);
+    }
+    section{
+        padding: 20px;
+    }
+    .banner .container h2{
+        font-size: 3em;
+        color: #fff;
+    }
+    .row{
+        flex-direction: column;
+    }
+    .row .col50{
+        position: relative;
+        width: 100%;
+    }
+    .row .col50 .imgbox{
+        height: 300px;
+        margin-top: 20px;
+    }
+    
+    .menu .container{
+        margin-top: 20px;
+    }
+    .menu .Title{
+        margin-top: 200px;
+    }
+
+    .menu .container{
+        margin: 1rem;
+    }
+
+    .menu .container .box .imgbox{
+        height: 26.5rem;
+    }
+    .Title{
+        text-align: center;
+    }
+    .title{
+        font-size: 1.8em;
+        line-height: 1.5em;
+        margin-bottom: 15px;
+        font-weight: 500;
+    }
+    .review .container .box{
+        margin: 10px;
+        padding: 20px;
+
+    }
+    .contactform{
+        padding:  35px 40px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .banner .container h2{
+        font-size: 2.2em;
+        color: #fff;
+    }
+}
+
+@media (max-width: 660px) {
+    .menu .Title{
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 520px) {
+    .menu .Title{
+        margin-top: 0px;
+    }
+}
